@@ -202,7 +202,7 @@
         android:fontFamily="@font/orbitron"
         android:gravity="left"
         android:outlineProvider="none"
-        android:text="234234"
+        android:text=""
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextNumbers"
         app:layout_constraintStart_toStartOf="parent"
