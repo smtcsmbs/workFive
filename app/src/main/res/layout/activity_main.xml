@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:backgroundTint="@color/blackMain"
+        android:fontFamily="@font/orbitron"
+        android:id="@+id/buttonPlus"
+        android:layout_width="52dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:text="+"
+        android:textSize="48sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonNine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonThree" />
+
+    <Button
+        android:backgroundTint="@color/blackMain"
+        android:id="@+id/buttonSeven"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:text="7"
+        android:fontFamily="@font/orbitron"
+        android:textSize="24sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="@+id/buttonFour"
+        app:layout_constraintTop_toTopOf="@+id/buttonEight" />
+
+    <Button
+        android:backgroundTint="@color/blackMain"
+        android:id="@+id/buttonOne"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:text="1"
+        android:fontFamily="@font/orbitron"
+        android:textSize="24sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonTwo" />
+
+    <Button
+        android:backgroundTint="@color/blackMain"
+        android:id="@+id/buttonFive"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="5"
+        android:fontFamily="@font/orbitron"
+        android:textSize="24sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonFour"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTwo" />
+
+    <Button
+        android:backgroundTint="@color/blackMain"
+        android:id="@+id/buttonEight"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="8"
+        android:fontFamily="@font/orbitron"
+        android:textSize="24sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonSeven"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFive" />
+
+    <Button
+        android:backgroundTint="@color/blackMain"
+        android:id="@+id/buttonFour"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:text="4"
+        android:fontFamily="@font/orbitron"
+        android:textSize="24sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="@+id/buttonOne"
+        app:layout_constraintTop_toTopOf="@+id/buttonFive" />
+
+    <Button
+        android:backgroundTint="@color/blackMain"
+        android:id="@+id/buttonThree"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/orbitron"
+        android:text="3"
+        android:textSize="24sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonTwo"
+        app:layout_constraintTop_toTopOf="@+id/buttonTwo" />
+
+    <Button
+        android:backgroundTint="@color/blackMain"
+        android:id="@+id/buttonTwo"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text="2"
+        android:fontFamily="@font/orbitron"
+        android:textSize="24sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonOne"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumbers" />
+
+    <Button
+        android:backgroundTint="@color/blackMain"
+        android:id="@+id/buttonSix"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:text="6"
+        android:fontFamily="@font/orbitron"
+        android:textSize="24sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonThree"
+        app:layout_constraintTop_toTopOf="@+id/buttonFive" />
+
+    <Button
+        android:backgroundTint="@color/blackMain"
+        android:id="@+id/buttonNine"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:text="9"
+        android:fontFamily="@font/orbitron"
+        android:textSize="24sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSix"
+        app:layout_constraintStart_toStartOf="@+id/buttonThree"
+        app:layout_constraintTop_toTopOf="@+id/buttonEight" />
+
+    <Button
+        android:backgroundTint="@color/orange"
+        android:id="@+id/buttonCalculate"
+        android:layout_width="52dp"
+        android:layout_height="74dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingTop="1dp"
+        android:fontFamily="@font/orbitron"
+        android:text="="
+        android:textSize="34sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPlus"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonAC"
+        app:layout_constraintTop_toTopOf="@+id/buttonZero" />
+
+    <Button
+        android:backgroundTint="@color/orange"
+        android:id="@+id/buttonAC"
+        android:fontFamily="@font/orbitron"
+        android:layout_width="77dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        android:text="AC"
+        android:textSize="15sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonOne"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSeven" />
+
+
+    <EditText
+
+        android:id="@+id/editTextNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/orbitron"
+        android:hint="Start calculating..."
+        android:inputType="textPersonName"
+        android:longClickable="false"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="322dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/orbitron"
+        android:gravity="left"
+        android:outlineProvider="none"
+        android:text="234234"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumbers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:backgroundTint="@color/blackMain"
+        android:id="@+id/buttonZero"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="0"
+        android:fontFamily="@font/orbitron"
+        android:textSize="24sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAC"
+        app:layout_constraintEnd_toEndOf="@+id/buttonNine"
+        app:layout_constraintStart_toStartOf="@+id/buttonEight"
+        app:layout_constraintTop_toTopOf="@+id/buttonAC" />
+
+    <TextView
+        android:id="@+id/cache"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumbers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
